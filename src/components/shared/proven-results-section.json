@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_proven_results_sections",
+  "info": {
+    "displayName": "ProvenResultsSection"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "StatsCards": {
+      "type": "component",
+      "component": "shared.stats-cards",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

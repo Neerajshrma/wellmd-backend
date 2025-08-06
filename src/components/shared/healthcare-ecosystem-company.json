@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_healthcare_ecosystem_companies",
+  "info": {
+    "displayName": "HealthcareEcosystemCompany"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "ChildCompanies": {
+      "type": "component",
+      "component": "shared.child-companies",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

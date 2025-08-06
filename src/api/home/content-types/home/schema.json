@@ -1,0 +1,63 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "HeroSection": {
+      "type": "component",
+      "component": "shared.hero-section",
+      "repeatable": false
+    },
+    "WhatWeDoSection": {
+      "type": "component",
+      "component": "shared.what-we-do",
+      "repeatable": false
+    },
+    "FoundersVoiceSection": {
+      "type": "component",
+      "component": "shared.founders-voice-section",
+      "repeatable": false
+    },
+    "HealthcareEcosystemSection": {
+      "type": "component",
+      "component": "shared.healthcare-ecosystem-company",
+      "repeatable": false
+    },
+    "ProvenResultsSection": {
+      "type": "component",
+      "component": "shared.proven-results-section",
+      "repeatable": false
+    },
+    "CTA": {
+      "type": "component",
+      "component": "shared.cta",
+      "repeatable": false
+    },
+    "PressReleasesSection": {
+      "type": "component",
+      "component": "shared.press-releases-section",
+      "repeatable": false
+    },
+    "NewsletterSection": {
+      "type": "component",
+      "component": "shared.newsletter-section",
+      "repeatable": false
+    },
+    "ComparisonTable": {
+      "type": "component",
+      "component": "shared.comparison-table",
+      "repeatable": false
+    }
+  }
+}

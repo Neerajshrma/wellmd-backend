@@ -15,9 +15,40 @@
     "title": {
       "type": "string"
     },
-    "blocks": {
-      "type": "dynamiczone",
-      "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
+    "HeroSection": {
+      "type": "component",
+      "component": "shared.hero-section",
+      "repeatable": false
+    },
+    "FoundersVoiceSection": {
+      "type": "component",
+      "component": "shared.founders-voice-section",
+      "repeatable": false
+    },
+    "OurMission": {
+      "type": "component",
+      "component": "shared.our-mission",
+      "repeatable": false
+    },
+    "OurStory": {
+      "type": "component",
+      "component": "shared.our-story",
+      "repeatable": false
+    },
+    "OurValues": {
+      "type": "component",
+      "component": "shared.our-values",
+      "repeatable": false
+    },
+    "PeakHealthCards": {
+      "type": "component",
+      "component": "shared.peak-health",
+      "repeatable": false
+    },
+    "CTA": {
+      "type": "component",
+      "component": "shared.cta",
+      "repeatable": false
     }
   }
 }

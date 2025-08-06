@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_comparison_tables",
+  "info": {
+    "displayName": "ComparisonTable"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Heading": {
+      "type": "text"
+    },
+    "ComparisonFeatureRow": {
+      "type": "component",
+      "component": "shared.comparison-feature-row",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

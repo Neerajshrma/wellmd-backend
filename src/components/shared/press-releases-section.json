@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_press_releases_sections",
+  "info": {
+    "displayName": "PressReleasesSection"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "press_releases": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::press-release.press-release"
+    }
+  },
+  "config": {}
+}

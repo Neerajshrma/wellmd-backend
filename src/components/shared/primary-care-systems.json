@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_primary_care_systems",
+  "info": {
+    "displayName": "PrimaryCareSystems"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "FeatureList": {
+      "type": "component",
+      "component": "shared.list",
+      "repeatable": true
+    },
+    "Logo": {
+      "type": "component",
+      "component": "shared.our-products",
+      "repeatable": true
+    },
+    "Heading": {
+      "type": "text"
+    },
+    "SubHeading": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

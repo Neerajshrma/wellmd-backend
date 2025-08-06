@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_ctas",
+  "info": {
+    "displayName": "CTA"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "ButtonUrl": {
+      "type": "text"
+    },
+    "ButtonLabel": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

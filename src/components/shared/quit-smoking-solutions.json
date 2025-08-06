@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_shared_quit_smoking_solutions",
+  "info": {
+    "displayName": "QuitSmokingSolutions"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Heading": {
+      "type": "text"
+    },
+    "SubHeading": {
+      "type": "text"
+    },
+    "Logo": {
+      "type": "component",
+      "component": "shared.our-products",
+      "repeatable": false
+    },
+    "FeatureList": {
+      "type": "component",
+      "component": "shared.list",
+      "repeatable": true
+    },
+    "QuitSmokingSolutions": {
+      "type": "component",
+      "component": "shared.quit-program-card",
+      "repeatable": true
+    },
+    "QuitProgramCardHeading": {
+      "type": "text"
+    },
+    "QuitProgramCardbuttonlabel": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

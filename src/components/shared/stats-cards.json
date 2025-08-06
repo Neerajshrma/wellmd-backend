@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_stats_cards",
+  "info": {
+    "displayName": "StatsCards"
+  },
+  "options": {},
+  "attributes": {
+    "StatNumber": {
+      "type": "string"
+    },
+    "StatTitle": {
+      "type": "string"
+    },
+    "StatDescription": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

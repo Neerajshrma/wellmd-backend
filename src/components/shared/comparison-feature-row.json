@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_comparison_feature_rows",
+  "info": {
+    "displayName": "ComparisonFeatureRow"
+  },
+  "options": {},
+  "attributes": {
+    "Feature": {
+      "type": "string"
+    },
+    "WellmdAvailableNycmdAvailable": {
+      "type": "enumeration",
+      "enum": [
+        "available",
+        "not_available",
+        "unlikely"
+      ]
+    },
+    "traditionalCareAvailable": {
+      "type": "enumeration",
+      "enum": [
+        "available",
+        "not_available",
+        "unlikely"
+      ]
+    }
+  },
+  "config": {}
+}

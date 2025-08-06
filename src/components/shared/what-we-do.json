@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_what_we_dos",
+  "info": {
+    "displayName": "WhatWeDo"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Cards": {
+      "type": "component",
+      "component": "shared.cards",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

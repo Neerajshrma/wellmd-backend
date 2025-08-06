@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_child_companies",
+  "info": {
+    "displayName": "ChildCompanies"
+  },
+  "options": {},
+  "attributes": {
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "CompanyName": {
+      "type": "string"
+    },
+    "Tagline": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "WebsiteURL": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

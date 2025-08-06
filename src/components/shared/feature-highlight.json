@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_shared_feature_highlights",
+  "info": {
+    "displayName": "FeatureHighlight"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "FeaturesList": {
+      "type": "component",
+      "component": "shared.list",
+      "repeatable": true
+    },
+    "ButtonLabel": {
+      "type": "string"
+    },
+    "ButtonURL": {
+      "type": "text"
+    },
+    "FeatureImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Subtitle": {
+      "type": "text"
+    },
+    "Tagline": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

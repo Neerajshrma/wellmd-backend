@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_our_missions",
+  "info": {
+    "displayName": "OurMission"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_founders_voice_sections",
+  "info": {
+    "displayName": "FoundersVoiceSection"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Quote": {
+      "type": "text"
+    },
+    "AuthorImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "AuthorName": {
+      "type": "string"
+    },
+    "AuthorTitle": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

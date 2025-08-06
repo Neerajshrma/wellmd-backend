@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_our_products",
+  "info": {
+    "displayName": "OurProducts"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ProductUrl": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

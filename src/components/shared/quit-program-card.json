@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_quit_program_cards",
+  "info": {
+    "displayName": "QuitProgramCard"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "text"
+    },
+    "Badge": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

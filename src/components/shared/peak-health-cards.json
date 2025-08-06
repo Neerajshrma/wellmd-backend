@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_peak_health_cards",
+  "info": {
+    "displayName": "PeakHealthCards"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "FeatureList": {
+      "type": "component",
+      "component": "shared.list",
+      "repeatable": true
+    },
+    "Description2": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

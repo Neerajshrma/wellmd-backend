@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_shared_well_md_differences",
+  "info": {
+    "displayName": "WellMDDifference"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "FeatureList": {
+      "type": "component",
+      "component": "shared.list",
+      "repeatable": true
+    },
+    "DifferenceImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

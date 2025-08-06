@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_shared_newsletter_sections",
+  "info": {
+    "displayName": "NewsletterSection"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "FeatureList": {
+      "type": "component",
+      "component": "shared.list",
+      "repeatable": true
+    },
+    "Tag": {
+      "type": "string"
+    },
+    "ButtonLabel": {
+      "type": "string"
+    },
+    "PrivacyDetail": {
+      "type": "string"
+    },
+    "Headline": {
+      "type": "text"
+    },
+    "Subheadline": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

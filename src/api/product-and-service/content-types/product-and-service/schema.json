@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "product_and_services",
+  "info": {
+    "singularName": "product-and-service",
+    "pluralName": "product-and-services",
+    "displayName": "product&service"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HeroSection": {
+      "type": "component",
+      "component": "shared.hero-section",
+      "repeatable": false
+    },
+    "OurProducts": {
+      "type": "component",
+      "component": "shared.our-products",
+      "repeatable": true
+    },
+    "WellMDDifference": {
+      "type": "component",
+      "component": "shared.well-md-difference",
+      "repeatable": false
+    },
+    "CTA": {
+      "type": "component",
+      "component": "shared.cta",
+      "repeatable": false
+    },
+    "PrimaryCareSystems": {
+      "type": "component",
+      "component": "shared.primary-care-systems",
+      "repeatable": false
+    },
+    "PatentedFitnessProducts": {
+      "type": "component",
+      "component": "shared.patented-fitness-products",
+      "repeatable": false
+    },
+    "QuitSmokingSolutions": {
+      "type": "component",
+      "component": "shared.quit-smoking-solutions",
+      "repeatable": false
+    }
+  }
+}

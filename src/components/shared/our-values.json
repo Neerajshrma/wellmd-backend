@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_our_values",
+  "info": {
+    "displayName": "OurValues"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "ValueCards": {
+      "type": "component",
+      "component": "shared.cards",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

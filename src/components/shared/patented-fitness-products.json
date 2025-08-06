@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_patented_fitness_products",
+  "info": {
+    "displayName": "PatentedFitnessProducts"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Logo": {
+      "type": "component",
+      "component": "shared.our-products",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

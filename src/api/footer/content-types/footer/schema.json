@@ -38,6 +38,11 @@
     },
     "CopyrightText": {
       "type": "text"
+    },
+    "OurBrands": {
+      "type": "component",
+      "component": "shared.our-products",
+      "repeatable": true
     }
   }
 }

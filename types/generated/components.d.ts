@@ -257,6 +257,17 @@ export interface SharedPeakHealthCards extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedPolicySection extends Struct.ComponentSchema {
+  collectionName: 'components_shared_policy_sections';
+  info: {
+    displayName: 'PolicySection';
+  };
+  attributes: {
+    Content: Schema.Attribute.Blocks;
+    Heading: Schema.Attribute.String;
+  };
+}
+
 export interface SharedPressReleasesSection extends Struct.ComponentSchema {
   collectionName: 'components_shared_press_releases_sections';
   info: {
@@ -444,6 +455,7 @@ declare module '@strapi/strapi' {
       'shared.patented-fitness-products': SharedPatentedFitnessProducts;
       'shared.peak-health': SharedPeakHealth;
       'shared.peak-health-cards': SharedPeakHealthCards;
+      'shared.policy-section': SharedPolicySection;
       'shared.press-releases-section': SharedPressReleasesSection;
       'shared.primary-care-systems': SharedPrimaryCareSystems;
       'shared.proven-results-section': SharedProvenResultsSection;

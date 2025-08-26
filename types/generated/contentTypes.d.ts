@@ -577,6 +577,7 @@ export interface ApiFooterFooter extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     Logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    OurBrands: Schema.Attribute.Component<'shared.our-products', true>;
     PinterestUrl: Schema.Attribute.Text;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
@@ -612,6 +613,34 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     siteDescription: Schema.Attribute.Text & Schema.Attribute.Required;
     siteName: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHipaaHipaa extends Struct.SingleTypeSchema {
+  collectionName: 'hipaas';
+  info: {
+    displayName: 'HIPAA';
+    pluralName: 'hipaas';
+    singularName: 'hipaa';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Introduction: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::hipaa.hipaa'> &
+      Schema.Attribute.Private;
+    PolicySection: Schema.Attribute.Component<'shared.policy-section', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    Tagline: Schema.Attribute.String;
+    Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -706,6 +735,37 @@ export interface ApiPressReleasePressRelease
   };
 }
 
+export interface ApiPrivacyPolicyPrivacyPolicy extends Struct.SingleTypeSchema {
+  collectionName: 'privacy_policies';
+  info: {
+    displayName: 'Privacy-Policy';
+    pluralName: 'privacy-policies';
+    singularName: 'privacy-policy';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Introduction: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::privacy-policy.privacy-policy'
+    > &
+      Schema.Attribute.Private;
+    PolicySection: Schema.Attribute.Component<'shared.policy-section', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    Tagline: Schema.Attribute.String;
+    Title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProductAndServiceProductAndService
   extends Struct.SingleTypeSchema {
   collectionName: 'product_and_services';
@@ -780,6 +840,38 @@ export interface ApiTechnologyTechnology extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTermAndConditionTermAndCondition
+  extends Struct.SingleTypeSchema {
+  collectionName: 'term_and_conditions';
+  info: {
+    displayName: 'Term&Condition';
+    pluralName: 'term-and-conditions';
+    singularName: 'term-and-condition';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Introduction: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::term-and-condition.term-and-condition'
+    > &
+      Schema.Attribute.Private;
+    PolicySection: Schema.Attribute.Component<'shared.policy-section', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    Tagline: Schema.Attribute.String;
+    Title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1302,10 +1394,13 @@ declare module '@strapi/strapi' {
       'api::contact.contact': ApiContactContact;
       'api::footer.footer': ApiFooterFooter;
       'api::global.global': ApiGlobalGlobal;
+      'api::hipaa.hipaa': ApiHipaaHipaa;
       'api::home.home': ApiHomeHome;
       'api::press-release.press-release': ApiPressReleasePressRelease;
+      'api::privacy-policy.privacy-policy': ApiPrivacyPolicyPrivacyPolicy;
       'api::product-and-service.product-and-service': ApiProductAndServiceProductAndService;
       'api::technology.technology': ApiTechnologyTechnology;
+      'api::term-and-condition.term-and-condition': ApiTermAndConditionTermAndCondition;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_policy_sections",
+  "info": {
+    "displayName": "PolicySection"
+  },
+  "options": {},
+  "attributes": {
+    "Heading": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

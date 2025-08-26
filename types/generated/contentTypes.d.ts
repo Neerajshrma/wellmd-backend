@@ -633,7 +633,7 @@ export interface ApiHipaaHipaa extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    Introduction: Schema.Attribute.String;
+    Introduction: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::hipaa.hipaa'> &
       Schema.Attribute.Private;

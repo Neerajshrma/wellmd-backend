@@ -18,7 +18,7 @@
       "type": "string"
     },
     "Introduction": {
-      "type": "string"
+      "type": "text"
     },
     "PolicySection": {
       "type": "component",
